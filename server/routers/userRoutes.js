@@ -2,7 +2,10 @@ const express = require('express')
 const router = express.Router()
 
 const {
-    addUser 
+    addUser,
+    setUserInfo,
+    addCourse,
+    removeCourse
 } = require('../controllers/userController')
 
 router.route('/').post(addUser)

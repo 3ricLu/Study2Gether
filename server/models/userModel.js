@@ -13,7 +13,16 @@ const userSchema = mongoose.Schema(
         email: {
             type: String,
             required: [true, 'Add an email']
-        }
+        },
+        year:{
+            type: Number
+        },
+        program: {
+            type: String
+        },
+        courses: [{
+            code: String
+        }]
     }, {
         timestamps: true,
         _id: false

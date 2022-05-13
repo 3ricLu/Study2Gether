@@ -11,6 +11,21 @@ const addUser = asyncHandler(async (req, res) => {
     res.status(200).json(newUser);
 })
 
+const setUserInfo = asyncHandler(async(req, res) => {
+
+})
+
+const addCourse = asyncHandler(async(req, res) => {
+
+})
+
+const removeCourse = asyncHandler(async(req, res) => {
+
+})
+
 module.exports = {
-    addUser
+    addUser,
+    setUserInfo,
+    addCourse,
+    removeCourse
 }
