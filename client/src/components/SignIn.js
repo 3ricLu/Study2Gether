@@ -1,98 +1,90 @@
-import React, { useState } from "react";
-import "../styles/signin.css";
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
+import '../styles/signin.css';
 import firebaseApp, { auth } from '../firebase/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
+
+const API_URL = 'http://localhost:8080/api'
 
 function SignIn() {
+    // Log In
+    const navigate = useNavigate();
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [username, setUsername] = useState('')
+    const [isRegistering, setIsRegistering] = useState(false)
 
-  const navigate = useNavigate();
-  // Log In
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [username, setUsername] = useState('')
-  const [isRegistering, setIsRegistering] = useState(false)
-  const [user, setUser] = useState({ name: "", email: "", password: "" });
-  const [error, setError] = useState("");
+    const attemptLogin = () => {
+      signInWithEmailAndPassword(auth, email, password).then((credentials) => {
+        navigate('/home')
+      }).catch((error) => {
 
-  const Login = () => {
-    signInWithEmailAndPassword(auth, email, password).then((credentials) => {
-      navigate('/profile')
-    }).catch((error) => {
-
-    });
+      });
     }
 
-  const Logout = () => {
-    setUser({name: "", email: "", password: "" })
-  };
+    const attemptRegister = async () => {
+      createUserWithEmailAndPassword(auth, email, password).then(async (credentials) => {
+        const userData = {
+          _id: credentials.user.uid,
+          username: username,
+          email: email
+        };
+        const response = await axios.post(API_URL + '/users', userData);
+        navigate('/home')
+      }).catch((error) => {
 
-  return (
-    <div className="SignIn">
-      {user.email != "" ? (
-        <div className="welcome">
-          <h2>
-            Welcome, <span>{user.name}</span>
-          </h2>
-          <button onClick={Logout}>Logout</button>
+      })
+    }
+
+    const switchLogin = () => {
+      setIsRegistering(!!!isRegistering)
+    }
+
+    return(
+        <div className='App'>
+          <div className='main'>
+            <div className='side-container'></div>
+            <div className='login-container'>
+              <div className='login-box'>
+                <div className='subtitle'>
+                  HiveRead
+                </div>
+                <div className='text'>
+                  
+                </div>
+                <div className='text-left'>
+                  Experience reading together. 
+                </div>
+                <br></br>
+                <div className='login-username'>
+                  <input className='input' placeholder='Email' onChange={(e) => {setEmail(e.target.value)}}>
+                  </input>
+                </div>
+                <div className='password'>
+                  <input className='input' type='password' placeholder='Password' onChange={(e) => {setPassword(e.target.value)}}>
+                  </input>
+                </div>
+                {isRegistering && 
+                  <div>
+                    <div className='login-username'>
+                    </div>
+                    <input className='input' placeholder='Username' onChange={(e) => {setUsername(e.target.value)}}></input>
+                    <button className='login-btn' onClick={attemptRegister}>Register</button>
+                    <button className='register-btn' onClick={switchLogin}>Return to sign in</button>
+                  </div>
+                }
+                {!isRegistering &&
+                  <div>
+                    <button className='login-btn' onClick={attemptLogin}>Sign In</button>
+                    <button className='register-btn' onClick={switchLogin}>Don't have an account? Register</button>
+                  </div>
+                }
+                </div>
+            </div>
+          </div>
         </div>
-      ) : (
-        <LoginForm Login={Login} error={error} />
-      )}
-    </div>
-  );
+    )
 }
 
-function LoginForm({ Login, error }) {
-  const [details, setDetails] = useState({ name: "", email: "", password: "" });
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-
-    Login(details);
-  };
-  return (
-      <>
-    <form onSubmit={submitHandler}>
-      <div className="form-inner">
-        <h2>Sign In</h2>
-        {(error != "") ? (<div className="error">{error}</div>) : ""}
-
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            onChange={(e) => setDetails({ ...details, name: e.target.value })}
-            value={details.name}
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" name="email" id="email" onChange={(e) => setDetails({ ...details, email: e.target.value })}
-            value={details.email}/>
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input type="password" name="password" id="password" onChange={(e) => setDetails({ ...details, password: e.target.value })}
-            value={details.password}/>
-        </div>
-
-        <button className="submit" onClick={Login}>Sign In</button>
-        
-        <div className="sign-up">
-            Don't have an account? Sign Up
-        </div>
-      </div>
-      
-    </form>
-    
-    </>
-    
-  );
-}
-
-export default SignIn;
+export default SignIn; 
