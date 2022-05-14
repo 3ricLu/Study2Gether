@@ -1,0 +1,71 @@
+body > #root > div {
+    height: 100vh;
+  }
+
+.content-container {
+    margin-top: 0px;
+    height: 79vh;
+    display: flex;
+}
+
+.sidebar-container {
+    width: 300px;
+    height: 100%;
+    background-color: #393E46;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #222831;
+    text-align: left;
+}
+
+.map-container {
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+    border-width: 20px;
+    border-color: #222831;
+    text-align: left;
+    border-style: solid;
+}
+
+.sidebar-title {
+    color: #EEEEEE;
+    font-size: 1.75em;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.dropdown-container {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.select {
+    min-width: 250px;
+    font-size: 1em;
+    padding: 6px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.btn-container {
+    margin-top: 170px;
+    width: 100%;
+    text-align: center;
+}
+
+.save-btn {
+    width: 170px;
+    color: #00ADB5;
+    background-color: #222831;
+    border-style: none;
+    font-size: 1.2em;
+    padding: 7px;
+}
+
+.save-btn:hover{
+    color: rgba(255, 255, 255, 0.7);
+  }

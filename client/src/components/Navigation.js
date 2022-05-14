@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-import '../styles/navigation';
-import Navigation from './Navigation';
+import '../styles/navigation.css';
 
 function Navigation() {
     // Constants
@@ -24,13 +23,18 @@ function Navigation() {
         navigate('/chat')
     }
 
+    function handleClickLogo() {
+        navigate('/profile')
+    }
+
+
     // Navigation bar looks
     return (
         <div className='App'>
             <div className='nav'>
                 <div className='nav-title-container'>
-                    <div className='nav-logo'></div>
-                    <div className='nav-title'></div>
+                    <div className='nav-logo' onClick={handleClickLogo}></div>
+                    <div className='nav-title'>Study2Gether</div>
                 </div>
                 <div className='nav-options'>
                     <button className='nav-button' onClick={handleClickProfile}>Profile</button>
