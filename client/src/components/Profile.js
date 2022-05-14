@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import '../styles/profile.css';
 import Navigation from './Navigation';
+import Map from './Map';
+import {GoogleMap, withScriptjs, Marker, InfoWindow, withGoogleMap} from 'react-google-maps';
+
+// Constants
+const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 function Profile () {
 
@@ -49,10 +54,17 @@ function Profile () {
                         </div>
 
                     </div>
-
+                    
                     {/* MAP */}
                     <div className='map-container'>
-                        <div>test</div>
+                        <MapWrapped
+                            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${
+                            process.env.REACT_APP_GOOGLE_KEY
+                            }`}
+                            loadingElement={<div style={{ height: `100%` }} />}
+                            containerElement={<div style={{ height: `100%` }} />}
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
                     </div>
                 </div>
             </div>
