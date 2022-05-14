@@ -15,11 +15,27 @@ function Map() {
             defaultCenter={{ lat: 43.473559, lng: -80.527860}}/>
 
             <Marker
-            position={{ lat: 43.475059, lng: -80.529466 }}
-            onClick={() => {
-                setSelectedBuilding("Lazaridis");
-                console.log("Laz clicked");
-            }}
+                position={{ lat: 43.475059, lng: -80.529466 }}
+                onClick={() => {
+                    setSelectedBuilding("Lazaridis");
+                    console.log("Laz clicked");
+                }}
+                icon={{
+                    url: '\kiwi.svg',
+                    scaledSize: new window.google.maps.Size(75, 75),
+                  }}
+            />
+
+            <Marker
+                position={{ lat: 43.473277, lng: -80.525316 }}
+                onClick={() => {
+                    setSelectedBuilding("Science Building");
+                    console.log("Science clicked");
+                }}
+                icon={{
+                    url: '\kiwi.svg',
+                    scaledSize: new window.google.maps.Size(75, 75),
+                  }}
             />
             
             {/* MARKER */}
@@ -31,13 +47,13 @@ function Map() {
             )}
 
             {/* MARKER */}
-            {selectedBuilding == "Lazaridis" && (
+            {selectedBuilding == "Science Building" && (
                 <InfoWindow
-                    position={{ lat: 43.475059, lng: -80.529466 }}>
-                    <div>Lazaridis</div>
+                    position={{ lat: 43.473277, lng: -80.525316 }}>
+                    <div>Science Building</div>
                 </InfoWindow>
             )}
-            
+
         </div>
 
         )
