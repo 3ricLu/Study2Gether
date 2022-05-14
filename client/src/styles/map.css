@@ -1,0 +1,16 @@
+.title-text {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.logo {
+    background-image: url(../assets/images/laz.jpeg);
+    height: 150px;
+    width: 200px;
+}
+
+.logo-lib {
+    background-image: url(../assets/images/library.jpeg);
+    height: 200px;
+    width: 300px;
+}
