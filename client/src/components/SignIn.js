@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import "../styles/signin.css";
+import firebaseApp, { auth } from '../firebase/firebase';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {useNavigate} from 'react-router-dom';
 
 function SignIn() {
-    const adminUser = {
-        email: "admin@admin.com",
-        password: "admin123"
-    }
+
+  const navigate = useNavigate();
+  // Log In
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState('')
+  const [isRegistering, setIsRegistering] = useState(false)
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState("");
 
-  const Login = (details) => {
-    console.log(details);
-    
-    if (details.email == adminUser.email && details.password == adminUser.password){
-        console.log("Logged in");
-        setUser({
-            name: details.name,
-            email: details.email
-        });
-    } else {
-        console.log("Details do not match!");
-        setError("Details do not match!");
-    }
+  const Login = () => {
+    signInWithEmailAndPassword(auth, email, password).then((credentials) => {
+      navigate('/profile')
+    }).catch((error) => {
+
+    });
     }
 
   const Logout = () => {
@@ -82,7 +81,7 @@ function LoginForm({ Login, error }) {
             value={details.password}/>
         </div>
 
-        <input type="submit" value="sign in" />
+        <button className="submit" onClick={Login}>Sign In</button>
         
         <div className="sign-up">
             Don't have an account? Sign Up
