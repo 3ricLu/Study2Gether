@@ -8,7 +8,6 @@ import {GoogleMap, withScriptjs, Marker, InfoWindow, withGoogleMap} from 'react-
 const MapWrapped = withScriptjs(withGoogleMap(Map));
 
 function Profile () {
-
     return (
         <div className='App'>
             <div className='Main'>

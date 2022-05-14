@@ -6,8 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import AppRouter from './routers/AppRouter';
 import firebaseApp from './firebase/firebase'
 
-const dotenv = require('dotenv').config()
-
 ReactDOM.render(
   <AppRouter/>,
   document.getElementById('root')
