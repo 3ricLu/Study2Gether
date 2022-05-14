@@ -59,7 +59,8 @@ form .form-inner .form-group {
     display: block;
     color: #666;
     font-size: 12px;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 12px;
     transition: 0.4s;
 }
 
@@ -86,9 +87,11 @@ form .form-inner input[type="submit"] {
     padding: 10px 15px;
     border-radius: 8px;
     background-color: #01ADB5;
+    margin-bottom: 12px;
     transition: 0.4s;
     color: #FFF;
     font-weight: 700;
     cursor: pointer;
 }
+
 

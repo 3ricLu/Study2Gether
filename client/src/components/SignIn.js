@@ -53,6 +53,7 @@ function LoginForm({ Login, error }) {
     Login(details);
   };
   return (
+      <>
     <form onSubmit={submitHandler}>
       <div className="form-inner">
         <h2>Sign In</h2>
@@ -82,9 +83,15 @@ function LoginForm({ Login, error }) {
         </div>
 
         <input type="submit" value="sign in" />
+        
+        <div className="sign-up">
+            Don't have an account? Sign Up
+        </div>
       </div>
+      
     </form>
-
+    
+    </>
     
   );
 }
