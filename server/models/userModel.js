@@ -21,10 +21,12 @@ const userSchema = mongoose.Schema(
             type: String
         },
         courses: [{
-            code: String
+            type: String
         }]
     }, {
         timestamps: true,
         _id: false
     }
 )
+
+module.exports = mongoose.model('User', userSchema)
