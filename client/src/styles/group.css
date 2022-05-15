@@ -1,0 +1,110 @@
+
+
+.white-subtitle {
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: #EEEEEE;
+  }
+
+.white-text {
+  font-size: 1em;
+  color: #EEEEEE;
+}
+
+/* CARDS */
+.group-collective-card-container {
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-sidebar-container {
+    background-color:#00ADB5;
+    height: 500px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-card-container {
+    width: 550px;
+    height: 110px;
+    background-color: #EEEEEE;
+    justify-items: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    border-style: solid;
+    display: flex;
+}
+
+.group-card-container:hover {
+    zoom: 100%;
+    border-color: #FF8C32;
+}
+
+.group-title {
+    font-size: 1.25em;
+    align-self: flex-start;
+    padding: 0.5em;
+    height: 30px;
+    width: 450px;
+}
+
+.group-desc {
+    width: 450px;
+    font-size: 1em;
+    padding: 0em;
+    height: 70px;
+    margin-left: 10px;
+}
+
+
+.group-info {
+    color: #EEEEEE;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: start;
+}
+
+.group-admin {
+    color: #EEEEEE;
+    font-size: 0.8em;
+    text-align: start;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.group-left {
+    background-color: #00ADB5;
+    width: 100px;
+}
+
+.input-code {
+    width: 500px;
+}
+
+.input {
+    margin-top: 10px;
+    width: 500px;
+}
+
+.group-btn {
+    justify-content: center;
+    padding: 10px;
+    color: #EEEEEE;
+    border-style: none;
+    font-size: 1em;
+    width: 150px;
+    background-color: #00ADB5;
+    margin-left: 10px;
+  }
+  
+  .group-btn:hover {
+    background-color: rgba(9, 33, 81, 0.9)
+  }

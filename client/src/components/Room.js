@@ -16,36 +16,24 @@ function Room () {
                             <select className='select'>
                                 <option value="bba">LH1009</option>
                                 <option value="cs">LH1010</option>
-                                <option value="ma">F2 DD Study Room</option>
                             </select>
                         </div>
 
                         {/* YEAR */}
-                        <div className='sidebar-title'>Year</div>
+                        <div className='sidebar-title'>Time</div>
                         <div className='dropdown-container'>
                             <select className='select'>
-                                <option value="one">1st Year</option>
-                                <option value="two">2nd Year</option>
-                                <option value="three">3rd Year</option>
-                                <option value="four">4th Year</option>
-                                <option value="five">5th Year</option>
-                            </select>
-                        </div>
-
-                        {/* COURSE */}
-                        <div className='sidebar-title'>Course</div>
-                        <div className='dropdown-container'>
-                            <select className='select'>
-                                <option value="103">CP103</option>
-                                <option value="104">CP104</option>
-                                <option value="212">CP212</option>
-                                <option value="317">CP317</option>
+                                <option value="one">1 Hour</option>
+                                <option value="two">2 Hours</option>
+                                <option value="three">3 Hours</option>
+                                <option value="four">4 Hours</option>
+                                <option value="five">5 Hours</option>
                             </select>
                         </div>
 
                         {/* BUTTON */}
                         <div className='btn-container'>
-                            <button className='save-btn'>Save Profile</button>
+                            <button className='save-btn'>Book Room</button>
                         </div>
 
                     </div>
@@ -53,7 +41,66 @@ function Room () {
                     {/* MAP */}
                     <div className='map-container'>
 
-                        TEST
+                        {/* INDIVIDUAL CARDS */}
+                        <div className='friend-card-container'>
+                            <div className='friend-left'>
+                                {/* ICON CAN GO HERE */}
+                                <div className='text'>Booked 2 Hours</div>
+                            </div>
+                            <div className='friend-right'>
+                                <div className='friend-title'>LH3094</div>
+                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
+                                <div className='friend-desc'><i className='fa fa-star'></i> Eric, Nick, Varan</div>
+                                <div className='friend-info-container'>
+                                </div>
+                                {/* <div className='group-info'>Details</div>
+                                <div className='group-admin'>Eric</div> */}
+                            </div>
+                            <div className='friend-right-right'>
+                                <div className='text'>Request to Join</div>
+                            </div>
+                        </div> 
+
+                        {/* INDIVIDUAL CARDS */}
+                        <div className='friend-card-container'>
+                            <div className='friend-left'>
+                                {/* ICON CAN GO HERE */}
+                                <div className='text'>Booked 1 Hours</div>
+                            </div>
+                            <div className='friend-right'>
+                                <div className='friend-title'>DD Study Room</div>
+                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
+                                <div className='friend-desc'><i className='fa fa-star'></i>John</div>
+                                <div className='friend-info-container'>
+                                </div>
+                                {/* <div className='group-info'>Details</div>
+                                <div className='group-admin'>Eric</div> */}
+                            </div>
+                            <div className='friend-right-right'>
+                                <div className='text'>Request to Join</div>
+                            </div>
+                        </div> 
+
+                        {/* INDIVIDUAL CARDS */}
+                        <div className='friend-card-container'>
+                            <div className='friend-left'>
+                                {/* ICON CAN GO HERE */}
+                                <div className='text'>Booked 3 Hours</div>
+                            </div>
+                            <div className='friend-right'>
+                                <div className='friend-title'>LH1001</div>
+                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
+                                <div className='friend-desc'><i className='fa fa-star'></i>Bob</div>
+                                <div className='friend-info-container'>
+                                </div>
+                                {/* <div className='group-info'>Details</div>
+                                <div className='group-admin'>Eric</div> */}
+                            </div>
+                            <div className='friend-right-right'>
+                                <div className='text'>Request to Join</div>
+                            </div>
+                        </div> 
+
                     </div>
                 </div>
             </div>

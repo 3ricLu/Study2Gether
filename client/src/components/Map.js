@@ -34,7 +34,7 @@ function Map() {
                         <div className='logo'></div>
                         <div className='title-text'>Lazaridis</div>
                         <div className='text'>Status: Busy</div>
-                        <div className='text'>Open Rooms: LH1010, LH3094</div>
+                        <div className='text'>Open Rooms: LH1009, LH1010</div>
                     </div>
                 </InfoWindow>
             )}
