@@ -16,6 +16,7 @@
     padding: 70px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #EEEEEE;
+    margin-top: 100px;
   }
   
   .username {
@@ -64,20 +65,20 @@
     border-style: none;
     font-size: 1em;
     width: 100%;
-    background-color: #06113C;
+    background-color: #00ADB5;
   }
   
   .register-btn {
     justify-content: center;
     padding: 10px;
-    color: #06113C;
+    color: #00ADB5;
     border-style: none;
     font-size: 1em;
     width: 100%;
   }
   
   .register-btn:hover {
-    color: rgba(16, 54, 130, 0.9)
+    color: rgba(57, 101, 189, 0.9)
   }
   
   .register-btn.pointer {
@@ -85,11 +86,11 @@
   }
   
   .btn:hover{
-    background-color: rgba(9, 33, 81, 0.9)
+    background-color: rgba(57, 101, 189, 0.9)
   }
   
   .login-btn:hover{
-    background-color: rgba(9, 33, 81, 0.9)
+    background-color: rgba(57, 101, 189, 0.9)
   }
   
   .input {

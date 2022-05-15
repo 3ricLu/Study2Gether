@@ -48,13 +48,13 @@ function SignIn() {
             <div className='login-container'>
               <div className='login-box'>
                 <div className='subtitle'>
-                  HiveRead
+                  Study2Gether
                 </div>
                 <div className='text'>
                   
                 </div>
                 <div className='text-left'>
-                  Experience reading together. 
+                  Experience studying together. 
                 </div>
                 <br></br>
                 <div className='login-username'>
