@@ -5,7 +5,6 @@ import firebaseApp, { auth } from '../firebase/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api'
 
 function SignIn() {
     // Log In
@@ -17,7 +16,7 @@ function SignIn() {
 
     const attemptLogin = () => {
       signInWithEmailAndPassword(auth, email, password).then((credentials) => {
-        navigate('/home')
+        navigate('/profile')
       }).catch((error) => {
 
       });
@@ -25,13 +24,7 @@ function SignIn() {
 
     const attemptRegister = async () => {
       createUserWithEmailAndPassword(auth, email, password).then(async (credentials) => {
-        const userData = {
-          _id: credentials.user.uid,
-          username: username,
-          email: email
-        };
-        const response = await axios.post(API_URL + '/users', userData);
-        navigate('/home')
+        navigate('/profile')
       }).catch((error) => {
 
       })
