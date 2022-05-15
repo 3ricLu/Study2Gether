@@ -5,9 +5,14 @@ import Navigation from './Navigation';
 function Chat () {
 
     return (
-        <div className='main'>
-            <Navigation/>
-            <div>This is the chat page</div>
+        <div className='App'>
+            <div className='Main'>
+                <Navigation/>
+                <div className='content-container'>
+                    {/* INSERT UR STUFF HERE */}
+                    INSERT STUFF
+                </div>
+            </div>
         </div>
     )
 }
