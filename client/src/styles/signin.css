@@ -9,6 +9,10 @@
     position: fixed;
     padding-top: 50px;
   }
+
+  .subtitle {
+    font-size: 2em;
+  }
   
   .login-box {
     width: 35%;
@@ -95,7 +99,7 @@
   
   .input {
     padding: 10px;
-    width: 100%;
+    width: 500px;
     color: #06113C;
   }
   
