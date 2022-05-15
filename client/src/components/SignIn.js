@@ -40,11 +40,8 @@ function SignIn() {
             <div className='side-container'></div>
             <div className='login-container'>
               <div className='login-box'>
-                <div className='subtitle'>
+                <div className='sub'>
                   Study2Gether
-                </div>
-                <div className='text'>
-                  
                 </div>
                 <div className='text-left'>
                   Experience studying together. 

@@ -26,6 +26,31 @@ function Group() {
                     {/* MAP */}
                     <div className='map-container'>
 
+                                        {/* WELCOME CONTAINER */}
+                                        <div className='welcome-container'>
+                        <div className='subtitle' id='join'>Join a Group</div>
+                        <div className='text'>Enter a group code to join.
+                        </div>
+                        <div className='text'>
+                            <input className='input' placeholder='Group Code'>
+                            </input>
+                            <button className='group-btn'>
+                                Submit
+                            </button>
+                         </div>
+                    </div>
+                    
+                    {/* WELCOME CONTAINER */}
+                    <div className='welcome-container'>
+                        <div className='subtitle' id='create'>Create a Group</div>
+                        <div className='text'>Be the admin of your own group.</div>
+                        <br></br>
+                        <div className='text'>
+                        <button className='group-btn'>
+                                Create
+                            </button></div>
+                    </div>
+
                         {/* CARDS */}
                     <div className='group-collective-card-container'>
                         {/* INDIVIDUAL CARDS */}

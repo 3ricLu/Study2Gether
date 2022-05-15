@@ -44,7 +44,7 @@
 
 .group-card-container:hover {
     zoom: 100%;
-    border-color: #FF8C32;
+    border-color: #00ADB5;
 }
 
 .group-title {
@@ -103,8 +103,19 @@
     width: 150px;
     background-color: #00ADB5;
     margin-left: 10px;
+    
   }
   
   .group-btn:hover {
-    background-color: rgba(9, 33, 81, 0.9)
+    background-color: #222831
   }
+
+.text {
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.subtitle {
+    color: #EEEEEE;
+    text-align: center;
+}
