@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import '../styles/navigation.css';
-
+//React component for the navigation bar.
 function Navigation() {
     // Constants
     const navigate = useNavigate();
 
     // Navigation Pages
+    //Functions below navigate the user to the other pages
     function handleClickProfile() {
         navigate('/profile')
     }

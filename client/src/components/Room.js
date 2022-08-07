@@ -2,7 +2,7 @@ import '../styles/room.css';
 import Navigation from './Navigation';
 
 function Room () {
-
+    // Chat room component
     return (
         <div className='App'>
             <div className='Main'>

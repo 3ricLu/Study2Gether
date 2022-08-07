@@ -5,15 +5,18 @@ import firebaseApp, { auth } from '../firebase/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import axios from 'axios';
 
+//React component for sign in page
 
 function SignIn() {
     // Log In
+    // Declare constants
     const navigate = useNavigate();
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [username, setUsername] = useState('')
     const [isRegistering, setIsRegistering] = useState(false)
 
+    //Attempt login in and sign in functions with "auth" from firebase
     const attemptLogin = () => {
       signInWithEmailAndPassword(auth, email, password).then((credentials) => {
         navigate('/profile')
@@ -30,10 +33,13 @@ function SignIn() {
       })
     }
 
+    //Change login to register to vice-versa
     const switchLogin = () => {
       setIsRegistering(!!!isRegistering)
     }
 
+    //Display elements before
+    //Login buttons connected to funcs above - Attempt register.. etc
     return(
         <div className='App'>
           <div className='main'>

@@ -3,6 +3,8 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
 import { getDatabase } from 'firebase/database';
 
+//Firebase authentication for user credentials - logging in and signing up
+
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
     authDomain: "hiveread.firebaseapp.com",

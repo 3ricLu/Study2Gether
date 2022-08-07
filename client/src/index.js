@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppRouter from './routers/AppRouter';
 import firebaseApp from './firebase/firebase'
-
+//Root to conv html/js to ReactJS
 ReactDOM.render(
   <AppRouter/>,
   document.getElementById('root')
