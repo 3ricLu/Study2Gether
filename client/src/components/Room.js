@@ -10,13 +10,12 @@ function Room () {
                 <div className='content-container'>
                     <div className='sidebar-container'>
                         {/* PROGRAM */}
-                        <div className='sidebar-title'>Available Room</div>
+                        <div className='sidebar-title'>Available Courts</div>
                         <div className='dropdown-container'>
                             <select className='select'>
-                                <option value="all">Any</option>
-                                <option value="bba">LH1009</option>
-                                <option value="cs">LH1010</option>
-                                <option value="cs">LH1012</option>
+                                <option value="all">Laz</option>
+                                <option value="bba">UW Court</option>
+                                <option value="cs">WLU Court</option>
                             </select>
                         </div>
 
@@ -66,7 +65,7 @@ function Room () {
 
                         {/* BUTTON */}
                         <div className='btn-container'>
-                            <button className='save-btn'>Book Room</button>
+                            <button className='save-btn'>Book Court</button>
                         </div>
 
                     </div>
@@ -81,9 +80,9 @@ function Room () {
                                 <div className='text'>Booked 2 Hours</div>
                             </div>
                             <div className='friend-right'>
-                                <div className='friend-title'>LH3094</div>
-                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
-                                <div className='friend-desc'><i className='fa fa-star'></i> Eric, Nick, Varan</div>
+                                <div className='friend-title'>Laz</div>
+                                <div className='friend-desc'><i className='fa fa-heart'></i>Team Members</div>
+                                <div className='friend-desc'><i className='fa fa-star'></i> Eric, Nick, Kshitij</div>
                                 <div className='friend-info-container'>
                                 </div>
                                 {/* <div className='group-info'>Details</div>
@@ -101,8 +100,8 @@ function Room () {
                                 <div className='text'>Booked 1 Hours</div>
                             </div>
                             <div className='friend-right'>
-                                <div className='friend-title'>DD Study Room</div>
-                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
+                                <div className='friend-title'>WLU Court</div>
+                                <div className='friend-desc'><i className='fa fa-heart'></i>Team Members</div>
                                 <div className='friend-desc'><i className='fa fa-star'></i>John</div>
                                 <div className='friend-info-container'>
                                 </div>
@@ -114,25 +113,6 @@ function Room () {
                             </div>
                         </div> 
 
-                        {/* INDIVIDUAL CARDS */}
-                        <div className='friend-card-container'>
-                            <div className='friend-left'>
-                                {/* ICON CAN GO HERE */}
-                                <div className='text'>Booked 3 Hours</div>
-                            </div>
-                            <div className='friend-right'>
-                                <div className='friend-title'>LH1001</div>
-                                <div className='friend-desc'><i className='fa fa-heart'></i>Group Members</div>
-                                <div className='friend-desc'><i className='fa fa-star'></i>Bob</div>
-                                <div className='friend-info-container'>
-                                </div>
-                                {/* <div className='group-info'>Details</div>
-                                <div className='group-admin'>Eric</div> */}
-                            </div>
-                            <div className='friend-right-right'>
-                                <div className='text'>Request to Join</div>
-                            </div>
-                        </div> 
 
                         {/* INDIVIDUAL CARDS */}
                         <div className='friend-card-container'>
@@ -141,7 +121,7 @@ function Room () {
                                 <div className='text'>Open Room</div>
                             </div>
                             <div className='friend-right'>
-                                <div className='friend-title'>LH1012</div>
+                                <div className='friend-title'>Kitchener Court</div>
                                 <div className='friend-info-container'>
                                 </div>
                                 {/* <div className='group-info'>Details</div>

@@ -32,9 +32,9 @@ function Map() {
                     position={{ lat: 43.475059, lng: -80.529466 }}>
                     <div className='container'>
                         <div className='logo'></div>
-                        <div className='title-text'>Lazaridis</div>
+                        <div className='title-text'>Lazaridis Court</div>
                         <div className='text'>Status: Busy</div>
-                        <div className='text'>Open Rooms: LH1009, LH1010</div>
+    
                     </div>
                 </InfoWindow>
             )}
@@ -96,7 +96,7 @@ function Map() {
             {selectedBuilding == "Athletic Complex" && (
                 <InfoWindow
                     position={{ lat: 43.475210, lng: -80.525739}}>
-                    <div>Bench Press Currently in use</div>
+                    <div>Court Currently in use</div>
                 </InfoWindow>
             )}
             
@@ -119,9 +119,9 @@ function Map() {
                     position={{ lat: 43.472857, lng: -80.529958 }}>
                     <div className='container'>
                         <div className='logo-lib'></div>
-                        <div className='title-text'>Library</div>
+                        <div className='title-text'>Waterloo Court</div>
                         <div className='text'>Status: Busy</div>
-                        <div className='text'>Open Rooms: F3 Open</div>
+
                     </div>
                 </InfoWindow>
             )}

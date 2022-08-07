@@ -28,8 +28,8 @@ function Group() {
 
                                         {/* WELCOME CONTAINER */}
                                         <div className='welcome-container'>
-                        <div className='subtitle' id='join'>Join a Group</div>
-                        <div className='text'>Enter a group code to join.
+                        <div className='subtitle' id='join'>Join a Team</div>
+                        <div className='text'>Enter a team code to join.
                         </div>
                         <div className='text'>
                             <input className='input' placeholder='Group Code'>
@@ -42,8 +42,8 @@ function Group() {
                     
                     {/* WELCOME CONTAINER */}
                     <div className='welcome-container'>
-                        <div className='subtitle' id='create'>Create a Group</div>
-                        <div className='text'>Be the admin of your own group.</div>
+                        <div className='subtitle' id='create'>Create a Team</div>
+                        <div className='text'>Be the admin of your own team.</div>
                         <br></br>
                         <div className='text'>
                         <button className='group-btn'>
@@ -59,8 +59,8 @@ function Group() {
                                 {/* ICON CAN GO HERE */}
                             </div>
                             <div className='group-right'>
-                                <div className='group-title'>CP103</div>
-                                <div className='group-desc'>Studying for the midterm on June 12th</div>
+                                <div className='group-title'>Team Stars</div>
+                                <div className='group-desc'>Tournament on June 12th</div>
                                 <div className='group-info-container'>
                             </div>
                                 {/* <div className='group-info'>Details</div>
@@ -74,8 +74,8 @@ function Group() {
                                 {/* ICON CAN GO HERE */}
                             </div>
                             <div className='group-right'>
-                                <div className='group-title'>CP212</div>
-                                <div className='group-desc'>Reviewing ranges in excel VBA</div>
+                                <div className='group-title'>Team moon</div>
+                                <div className='group-desc'>Playing on August 16th</div>
                                 <div className='group-info-container'>
                             </div>
                                 {/* <div className='group-info'>Details</div>

@@ -17,9 +17,9 @@ function AppRouter() {
             <Routes>
                 <Route exact path='/' element={<SignIn/>}/>
                 <Route exact path='/profile' element={<Profile/>}/>
-                <Route exact path='/group' element={<Group/>}/>
+                <Route exact path='/team' element={<Group/>}/>
                 <Route exact path='/chat' element={<Chat/>}/>
-                <Route exact path='/room' element={<Room/>}/>
+                <Route exact path='/map' element={<Room/>}/>
             </Routes>
         </BrowserRouter>
     )

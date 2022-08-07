@@ -37,13 +37,12 @@ function Profile () {
                         </div>
 
                         {/* COURSE */}
-                        <div className='sidebar-title'>Course</div>
+                        <div className='sidebar-title'>Skill</div>
                         <div className='dropdown-container'>
                             <select className='select'>
-                                <option value="103">CP103</option>
-                                <option value="104">CP104</option>
-                                <option value="212">CP212</option>
-                                <option value="317">CP317</option>
+                                <option value="103">Experienced</option>
+                                <option value="104">Intermediate</option>
+                                <option value="212">Beginner</option>
                             </select>
                         </div>
 

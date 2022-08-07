@@ -12,12 +12,12 @@ function Navigation() {
         navigate('/profile')
     }
 
-    function handleClickGroup() {
-        navigate('/group')
+    function handleClickMap() {
+        navigate('/map')
     }
 
-    function handleClickRoom() {
-        navigate('/room')
+    function handleClickTeam() {
+        navigate('/team')
     }
 
     function handleClickChat() {
@@ -39,8 +39,8 @@ function Navigation() {
                 </div>
                 <div className='nav-options'>
                     <button className='nav-button' onClick={handleClickProfile}>Profile</button>
-                    <button className='nav-button' onClick={handleClickGroup}>Study Group</button>
-                    <button className='nav-button' onClick={handleClickRoom}>Room Search</button>
+                    <button className='nav-button' onClick={handleClickMap}>Map</button>
+                    <button className='nav-button' onClick={handleClickTeam}>Team Search</button>
                     <button className='nav-button' onClick={handleClickChat}>Chat</button>
                 </div>
             </div>
