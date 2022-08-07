@@ -35,7 +35,7 @@ function Navigation() {
             <div className='nav'>
                 <div className='nav-title-container'>
                     <div className='nav-logo' onClick={handleClickLogo}></div>
-                    <div className='nav-title'>Study2Gether</div>
+                    <div className='nav-title'>Full-Court</div>
                 </div>
                 <div className='nav-options'>
                     <button className='nav-button' onClick={handleClickProfile}>Profile</button>
